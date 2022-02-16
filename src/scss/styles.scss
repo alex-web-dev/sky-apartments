@@ -6,7 +6,6 @@
 
 body {
     background: #202023;
-    min-height: 2000px; //dev
 }
 
 .container {
@@ -214,6 +213,7 @@ body {
 
     &__booking {
         width: 736px;
+        max-width: 100%;
         margin: 105px auto 0;
     }
 }
@@ -631,7 +631,6 @@ body {
     &__iframe {
         width: 100%;
         height: 100%;
-        object-fit: cover; //dev
     }
 }
 
