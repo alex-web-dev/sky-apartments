@@ -1,5 +1,111 @@
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1200px) {
+  .main {
+    &__article,
+    &__service,
+    &__reviews,
+    &__about {
+      margin-top: 100px;
+    }
 
+    &__footer {
+      margin-top: 150px;
+    }
+  }
+
+  .apartments {
+    &__title {
+      position: static;
+      transform: translateX(0);
+      width: 100%;
+      text-align: center;
+    }
+
+    &__sort {
+      order: 2;
+      margin-top: 25px;
+    }
+
+    &__header {
+      flex-wrap: wrap;
+    }
+
+    &__content {
+      max-width: 770px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__item {
+      width: calc(50% - 30px);
+    }
+  }
+
+  .article {
+    &__box {
+      &_inf {
+        padding: 30px 25px 30px 40px;
+      }
+    }
+
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__footer {
+      margin-top: 20px;
+    }
+
+    &__price {
+      margin-top: 30px;
+    }
+
+    &__btn {
+      margin-top: 30px;
+    }
+  }
+
+  .service-item {
+    width: calc(50% - 24px);
+    padding: 50px 15px 40px;
+
+    &__footer {
+      margin-top: auto;
+    }
+
+    &_horizontal {
+      display: block;
+
+      .service-item__text {
+        max-width: 200px;
+      }
+    }
+  }
+
+  .map {
+    padding: 350px 0 120px;
+  }
+
+  .about {
+    &__content {
+      padding: 60px 30px 70px 80px;
+    }
+
+    &__title {
+      font-size: 64px;
+    }
+
+    &__inf {
+      margin-top: 30px;
+    }
+  }
+
+  .footer {
+    padding: 60px 0 55px;
+
+    &__main {
+      margin: 50px -15px 80px;
+    }
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -7,9 +113,129 @@
     font-size: 56px;
   }
 
+  .title2 {
+    font-size: 40px;
+  }
+
+  .title3 {
+    font-size: 30px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .main {
+    &__article,
+    &__service,
+    &__reviews,
+    &__about {
+      margin-top: 80px;
+    }
+
+    &__footer {
+      margin-top: 120px;
+    }
+  }
+
   .banner {
     &__booking {
       margin-top: 60px;
+    }
+  }
+
+  .article {
+    &__content {
+      flex-direction: column;
+      align-items: center;
+      max-width: 570px;
+      margin: 0 auto;
+    }
+
+    &__box {
+      width: 100%;
+      border-radius: 30px;
+
+      &:first-child {
+        margin-right: 0;
+      }
+
+      &:last-child {
+        margin-left: 0;
+      }
+
+      &_inf {
+        align-self: center;
+        order: 2;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .map {
+    padding: 280px 0 100px;
+    
+    &__main {
+      border-radius: 30px 30px 0 0;
+    }
+
+    &__inf {
+      position: static;
+      width: 100%;
+      max-width: 100%;
+      background: $color-bg;
+      padding: 30px;
+      border-radius: 0 0 30px 30px;
+    }
+  }
+
+  .review {
+    padding: 40px 20px 18px;
+    border-radius: 30px;
+  }
+  
+  .about {
+    &__content {
+      padding: 60px 30px 70px 80px;
+    }
+
+    &__title {
+      font-size: 64px;
+    }
+
+    &__inf {
+      margin-top: 30px;
+    }
+  }
+
+  .about {
+    &__content {
+      border-radius: 30px;
+      padding: 40px 30px 30px 40px;
+    }
+
+    &__title {
+      font-size: 56px;
+    }
+
+    &__inf {
+      margin-top: 30px;
+    }
+  }
+
+  .footer {
+    padding: 50px 0 45px;
+
+    &__main {
+      margin: 40px -15px 70px;
+      flex-wrap: wrap;
+    }
+
+    &__column {
+      &:last-child {
+        width: 100%;
+        margin-top: 40px;
+      }
     }
   }
 }
@@ -17,6 +243,40 @@
 @media screen and (max-width: 767px) {
   .title1 {
     font-size: 40px;
+  }
+
+  .title2 {
+    font-size: 36px;
+  }
+
+  .title3 {
+    font-size: 28px;
+  }
+
+  .title4 {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 16px 30px;
+  }
+
+  .main {
+    &__article,
+    &__service,
+    &__reviews,
+    &__about {
+      margin-top: 60px;
+    }
+
+    &__footer {
+      margin-top: 90px;
+    }
   }
 
   .banner {
@@ -58,14 +318,186 @@
       height: 35px;
     }
   }
+
+  .sort {
+    &__item {
+      font-size: 18px;
+    }
+  }
+
+  .apartments {
+    &__content {
+      max-width: 370px;
+    }
+
+    &__list {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &__item {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .apartment {
+    padding: 220px 15px 15px;
+  }
+
+  .article {
+    &__box {
+      border-radius: 20px;
+      
+      &_inf {
+        padding: 25px 20px 20px;
+      }
+    }
+
+    &__footer {
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 15px;
+    }
+
+    &__price {
+      margin-right: 0;
+      margin-top: 15px;
+      max-width: 100%;
+    }
+
+    &__btn {
+      margin-top: 25px;
+    }
+  }
+
+  .service-item {
+    &__btn {
+      padding: 14px 23px;
+    }
+  }
+
+  .map {
+    padding: 310px 0 80px;
+
+    &__main {
+      border-radius: 20px 20px 0 0;
+      padding: 40%;
+    }
+
+    &__inf {
+      position: static;
+      width: 100%;
+      max-width: 100%;
+      background: $color-bg;
+      padding: 20px;
+      border-radius: 0 0 20px 20px;
+    }
+
+    &__title {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    &__contact-item {
+      margin-top: 15px;
+    }
+
+    &__address,
+    &__contact {
+      font-size: 16px;
+    }
+  }
+
+  .reviews {
+    &__list {
+      margin: 25px 0 0;
+    }
+
+    &__item {
+      width: 100%;
+      margin: 15px 0;
+    }
+  }
+
+  .review {
+    padding: 30px 15px 15px;
+    border-radius: 20px;
+  }
+
+  .about {
+    &__content {
+      border-radius: 20px;
+      padding: 25px 5px 20px 15px;
+    }
+
+    &__title {
+      font-size: 38px;
+    }
+
+    &__inf {
+      padding-right: 10px;
+    }
+
+    &__text {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 560px) {
+  .service {
+    &__list {
+      margin: 30px 0 0;
+    }
+  }
 
+  .service-item {
+    padding: 35px 15px 30px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .footer {
+    padding: 40px 0 35px;
+
+    &__main {
+      margin: 30px 0 40px;
+      flex-wrap: wrap;
+    }
+
+    &__column {
+      margin: 15px 0;
+      width: 100%;
+
+      &:last-child {
+        margin-top: 15px;
+      }
+    }
+
+    &__name {
+      margin-bottom: 20px;
+    }
+
+    &__menu-item {
+      margin-top: 15px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
 }
 
 @media screen and (max-width: 340px) {
   .title1 {
     font-size: 38px;
+  }
+
+  .title3 {
+    font-size: 26px;
   }
 }

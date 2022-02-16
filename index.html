@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header class="header header_index">
+    <!-- <header class="header header_index">
         <div class="container">
             <div class="header__content">
                 <a href="./" class="logo">
@@ -33,7 +33,8 @@
                 </nav>
             </div>
         </div>
-    </header>
+    </header> -->
+
     <main class="main">
         <section class="banner">
             <div class="container">
@@ -220,7 +221,9 @@
             <div class="container">
                 <div class="article__content">
                     <div class="article__box">
-                        <img src="dist/images/articles/1.jpg" alt="" class="article__img">
+                        <div class="article__bg">
+                            <img src="dist/images/articles/1.jpg" alt="" class="article__img">
+                        </div>
                     </div>
                     <div class="article__box article__box_inf">
                         <h3 class="title3 article__title">Spa-зона <br>
@@ -235,7 +238,7 @@
                             <li class="article__item">водяной коридор из двух купелей с водой разной температуры</li>
                         </ul>
                         <div class="article__footer">
-                            <div class="article__price">3500 руб. <br> /персона</div>
+                            <div class="article__price">3500 руб. /персона</div>
                             <button class="btn article__btn">Забронировать</button>
                         </div>
                     </div>
@@ -253,7 +256,9 @@
                             <h3 class="title4 service-item__title">Уборка</h3>
                             <p class="service-item__text">Ежедневное поддержание чистоты апартаментов</p>
                         </div>
-                        <button class="btn btn_transparent service-item__btn">Подробнее</button>
+                        <div class="service-item__footer">
+                            <button class="btn btn_transparent service-item__btn">Подробнее</button>
+                        </div>
                     </div>
                     <div class="service-item service__item">
                         <img src="dist/images/service/2.svg" alt="" class="service-item__img">
@@ -261,7 +266,9 @@
                             <h3 class="title4 service-item__title">WiFi</h3>
                             <p class="service-item__text">Бесплатный беспроводной доступ в интернет для наших гостей</p>
                         </div>
-                        <button class="btn btn_transparent service-item__btn">Подробнее</button>
+                        <div class="service-item__footer">
+                            <button class="btn btn_transparent service-item__btn">Подробнее</button>
+                        </div>
                     </div>
                     <div class="service-item service__item">
                         <img src="dist/images/service/3.svg" alt="" class="service-item__img">
@@ -270,7 +277,9 @@
                             <p class="service-item__text">Выгодные тарифы на посещение широко известного spa центра Nebo
                             </p>
                         </div>
-                        <button class="btn btn_transparent service-item__btn">Подробнее</button>
+                        <div class="service-item__footer">
+                            <button class="btn btn_transparent service-item__btn">Подробнее</button>
+                        </div>
                     </div>
                     <div class="service-item service__item">
                         <img src="dist/images/service/4.svg" alt="" class="service-item__img">
@@ -278,7 +287,9 @@
                             <h3 class="title4 service-item__title">Консьерж</h3>
                             <p class="service-item__text">Помощь в решении нелинейных вопросов.</p>
                         </div>
-                        <button class="btn btn_transparent service-item__btn">Подробнее</button>
+                        <div class="service-item__footer">
+                            <button class="btn btn_transparent service-item__btn">Подробнее</button>
+                        </div>
                     </div>
                     <div class="service-item service-item_horizontal service__item">
                         <img src="dist/images/service/5.svg" alt="" class="service-item__img">
@@ -286,7 +297,9 @@
                             <h3 class="title4 service-item__title">Румсервис</h3>
                             <p class="service-item__text">Широкое меню блюд, товаров и сервисов.</p>
                         </div>
-                        <button class="btn btn_transparent service-item__btn">Подробнее</button>
+                        <div class="service-item__footer">
+                            <button class="btn btn_transparent service-item__btn">Подробнее</button>
+                        </div>
                     </div>
                     <div class="service-item service-item_horizontal service__item">
                         <img src="dist/images/service/6.svg" alt="" class="service-item__img">
@@ -295,7 +308,9 @@
                             <p class="service-item__text">Специальные условия по парковке (При проживании на длительный
                                 срок)
                         </div>
-                        <button class="btn btn_transparent service-item__btn">Подробнее</button>
+                        <div class="service-item__footer">
+                            <button class="btn btn_transparent service-item__btn">Подробнее</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -304,7 +319,9 @@
         <section class="map main__map">
             <div class="container">
                 <div class="map__content">
-                    <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3776.52607308841!2d37.53328162502571!3d55.74919341538375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1644925612553!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="map__main">
+                        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3776.52607308841!2d37.53328162502571!3d55.74919341538375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1644925612553!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                     <div class="map__inf">
                         <h2 class="title2 map__title">Sky Apartments</h2>
                         <div class="map__contact-item">
@@ -340,7 +357,9 @@
                         <button class="btn article__btn">Забронировать</button>
                     </div>
                     <div class="article__box">
-                        <img src="dist/images/articles/2.jpg" alt="" class="article__img">
+                        <div class="article__bg">
+                            <img src="dist/images/articles/2.jpg" alt="" class="article__img">
+                        </div>
                     </div>
                 </div>
             </div>
