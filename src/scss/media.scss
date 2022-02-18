@@ -144,6 +144,10 @@
     }
   }
 
+  .apartment {
+    border-radius: 30px;
+  }
+
   .article {
     &__content {
       flex-direction: column;
@@ -174,7 +178,7 @@
 
   .map {
     padding: 280px 0 100px;
-    
+
     &__main {
       border-radius: 30px 30px 0 0;
     }
@@ -193,7 +197,7 @@
     padding: 40px 20px 18px;
     border-radius: 30px;
   }
-  
+
   .about {
     &__content {
       padding: 60px 30px 70px 80px;
@@ -266,6 +270,124 @@
     padding: 16px 30px;
   }
 
+  .filter-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+
+    &:before {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+  }
+
+  .menu {
+    position: relative;
+    margin-left: auto;
+
+    &:before {
+      content: "";
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s, visibility 0.4s, transform 0.4s;
+    }
+
+    &__toggle {
+      display: block;
+    }
+
+    &__list {
+      position: fixed;
+      z-index: 5;
+      right: 0;
+      top: 0;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 25px 15px;
+      width: 70vw;
+      height: 100%;
+      background: #fff;
+      transform: translateX(100%);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s, visibility 0.4s, transform 0.4s;
+      overflow-y: auto;
+    }
+
+    &__item {
+      margin: 15px 0;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 400;
+      color: #212121;
+    }
+
+    &_active {
+      &:before {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .menu__toggle {
+        position: fixed;
+        right: 15px;
+        z-index: 5;
+        top: 20px;
+      }
+
+      .menu__list {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      .menu__lines {
+        height: 0;
+
+        &,
+        &:before,
+        &:after {
+          background: #212121;
+        }
+
+        &:before {
+          transform: rotate(-45deg);
+        }
+
+        &:after {
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+
+  .header {
+    &__content {
+      padding: 20px 0;
+    }
+
+    &__name {
+      margin: 0 auto;
+    }
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
   .main {
     &__article,
     &__service,
@@ -280,6 +402,9 @@
   }
 
   .banner {
+    padding-top: 120px;
+    min-height: 1030px;
+
     &__name {
       font-size: 16px;
       padding-bottom: 25px;
@@ -311,6 +436,14 @@
           display: none;
         }
       }
+
+      &_leave {
+        order: 2;
+      }
+
+      &_price {
+        order: 3;
+      }
     }
 
     &__submit {
@@ -320,14 +453,28 @@
   }
 
   .sort {
-    &__item {
+    &__btn {
       font-size: 18px;
+
+      &:before {
+        width: 16px;
+        height: 16px;
+        margin-right: 12px;
+      }
     }
   }
 
   .apartments {
     &__content {
       max-width: 370px;
+    }
+
+    &__sort {
+      width: 100%;
+
+      &:not(:first-child) {
+        margin-left: 0px;
+      }
     }
 
     &__list {
@@ -343,13 +490,20 @@
   }
 
   .apartment {
-    padding: 220px 15px 15px;
+    padding: 180px 15px 15px;
+    border-radius: 20px;
+
+    &__type {
+      top: 40px;
+      font-size: 16px;
+      width: 90px;
+    }
   }
 
   .article {
     &__box {
       border-radius: 20px;
-      
+
       &_inf {
         padding: 25px 20px 20px;
       }
@@ -369,6 +523,14 @@
 
     &__btn {
       margin-top: 25px;
+    }
+
+    &__slider-prev {
+      left: 15px;
+    }
+
+    &__slider-next {
+      right: 15px;
     }
   }
 
@@ -445,6 +607,33 @@
       margin-top: 20px;
     }
   }
+
+  .catalog {
+    &__sorts {
+      flex-wrap: wrap;
+      margin: 40px 0 20px;
+    }
+
+    &__features {
+      margin-right: 0;
+    }
+
+    &__filter-btn {
+      margin-top: 15px;
+      margin-left: 0;
+    }
+  }
+
+  .features {
+    &__btn {
+      padding: 12px 25px;
+    }
+  }
+
+  .qs-datepicker-container {
+    padding: 15px 10px 10px;
+    width: 75vw;
+  }
 }
 
 @media screen and (max-width: 560px) {
@@ -499,5 +688,9 @@
 
   .title3 {
     font-size: 26px;
+  }
+
+  .name {
+    font-size: 17px;
   }
 }
