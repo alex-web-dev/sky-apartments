@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <link rel="shortcut icon" href="dist/images/ico.png">
-    <link rel="stylesheet" href="dist/css/styles.css">
+    <link rel="stylesheet" href="dist/css/styles.css?v=3">
     <title>Sky Apartments</title>
 </head>
 
 <body>
-    <!-- <header class="header header_index">
+    <header class="header header_index">
         <div class="container">
             <div class="header__content">
-                <a href="./" class="logo">
+                <a href="./" class="logo header__logo">
                     <img src="dist/images/logo.svg" alt="" class="logo__img">
                 </a>
                 <nav class="menu header__menu">
@@ -30,10 +30,13 @@
                             <a href="#" class="menu__link">О нас</a>
                         </li>
                     </ul>
+                    <button class="menu__toggle">
+						<span class="menu__lines"></span>
+					</button>
                 </nav>
             </div>
         </div>
-    </header> -->
+    </header>
 
     <main class="main">
         <section class="banner">
@@ -46,29 +49,31 @@
                         <div class="booking__list">
                             <div class="booking__item">
                                 <div class="booking__name">Прибытие</div>
-                                <input type="text" class="booking__input" placeholder="Выберите дату">
+                                <input type="text" class="input input_date booking__input" placeholder="Выберите дату">
                             </div>
-                            <div class="booking__item">
+                            <div class="booking__item booking__item_leave">
                                 <div class="booking__name">Выезд</div>
-                                <input type="text" class="booking__input" placeholder="Выберите дату">
+                                <input type="text" class="input input_date booking__input" placeholder="Выберите дату">
                             </div>
                             <div class="booking__item">
                                 <div class="booking__name">Гостей</div>
                                 <div class="booking__select">
                                     <select class="booking__select-input" name="" id="">
                                         <option value="">Количество</option>
-                                        <option value="">Количество</option>
-                                        <option value="">Количество</option>
+                                        <option value="1">1 гость</option>
+                                        <option value="2">2 гостя</option>
+                                        <option value="3">3 гостя</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="booking__item">
+                            <div class="booking__item booking__item_price">
                                 <div class="booking__name">Цена</div>
                                 <div class="booking__select">
                                     <select class="booking__select-input" name="" id="">
-                                        <option value="">От 18000</option>
-                                        <option value="">От 18000</option>
-                                        <option value="">От 18000</option>
+                                        <option value="18000">От 18 000</option>
+                                        <option value="36000">От 36 000</option>
+                                        <option value="54000">От 54 000</option>
+                                        <option value="54000">От 72 000</option>
                                     </select>
                                 </div>
                             </div>
@@ -84,7 +89,7 @@
                 <div class="apartments__content">
                     <div class="apartments__header">
                         <div class="sort apartments__sort">
-                            <div class="sort__item">По популярности</div>
+                            <button class="sort__btn">По популярности</button>
                         </div>
                         <h2 class="title2 apartments__title">Апартаменты</h2>
                     </div>
@@ -95,18 +100,13 @@
                                 <h3 class="title3 apartment__title">Sky Sex Room</h3>
                                 <div class="apartment__features">
                                     <div class="apartment__feature">2 гостя</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">1 спальня</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">1 санузел</div>
                                     <div class="apartment__feature">1 кровать</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">50 м2 комната</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">44 этаж</div>
                                 </div>
                                 <a href="#" class="move-link apartment__link"></a>
-                                <div class="apartment__type"></div>
                             </div>
                         </div>
                         <div class="apartment apartments__item">
@@ -115,19 +115,15 @@
                                 <h3 class="title3 apartment__title">Sky Double Suite</h3>
                                 <div class="apartment__features">
                                     <div class="apartment__feature">2 гостя</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">1 спальня</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">1 санузел</div>
                                     <div class="apartment__feature">1 кровать</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">50 м2 комната</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">44 этаж</div>
                                 </div>
                                 <a href="#" class="move-link apartment__link"></a>
-                                <div class="apartment__type"></div>
                             </div>
+                            <div class="apartment__type">Лучшая Цена</div>
                         </div>
                         <div class="apartment apartments__item">
                             <img src="dist/images/apartments/3.jpg" alt="Sky Diamond SPB" class="apartment__img">
@@ -135,18 +131,13 @@
                                 <h3 class="title3 apartment__title">Sky Diamond SPB</h3>
                                 <div class="apartment__features">
                                     <div class="apartment__feature">2 гостя</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">1 спальня</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">1 санузел</div>
                                     <div class="apartment__feature">1 кровать</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">50 м2 комната</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">44 этаж</div>
                                 </div>
                                 <a href="#" class="move-link apartment__link"></a>
-                                <div class="apartment__type"></div>
                             </div>
                         </div>
                         <div class="apartment apartments__item">
@@ -155,18 +146,13 @@
                                 <h3 class="title3 apartment__title">Sky Diamond</h3>
                                 <div class="apartment__features">
                                     <div class="apartment__feature">2 гостя</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">1 спальня</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">1 санузел</div>
                                     <div class="apartment__feature">1 кровать</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">50 м2 комната</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">44 этаж</div>
                                 </div>
                                 <a href="#" class="move-link apartment__link"></a>
-                                <div class="apartment__type"></div>
                             </div>
                         </div>
                         <div class="apartment apartments__item">
@@ -175,18 +161,13 @@
                                 <h3 class="title3 apartment__title">Sky Weekend</h3>
                                 <div class="apartment__features">
                                     <div class="apartment__feature">2 гостя</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">1 спальня</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">1 санузел</div>
                                     <div class="apartment__feature">1 кровать</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">50 м2 комната</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">44 этаж</div>
                                 </div>
                                 <a href="#" class="move-link apartment__link"></a>
-                                <div class="apartment__type"></div>
                             </div>
                         </div>
                         <div class="apartment apartments__item">
@@ -195,23 +176,18 @@
                                 <h3 class="title3 apartment__title">Sky Crown</h3>
                                 <div class="apartment__features">
                                     <div class="apartment__feature">2 гостя</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">1 спальня</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">1 санузел</div>
                                     <div class="apartment__feature">1 кровать</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">50 м2 комната</div>
-                                    <div class="apartment__features-separate">/</div>
                                     <div class="apartment__feature">44 этаж</div>
                                 </div>
                                 <a href="#" class="move-link apartment__link"></a>
-                                <div class="apartment__type"></div>
                             </div>
                         </div>
                     </div>
                     <div class="apartments__footer">
-                        <button class="btn btn_transparent apartments__btn">Больше вариантов</button>
+                        <a href="./apartments.html" class="btn btn_transparent apartments__btn">Больше вариантов</a>
                     </div>
                 </div>
             </div>
@@ -221,8 +197,22 @@
             <div class="container">
                 <div class="article__content">
                     <div class="article__box">
-                        <div class="article__bg">
-                            <img src="dist/images/articles/1.jpg" alt="" class="article__img">
+                        <div class="article__slider swiper">
+                            <div class="article__slider-wrapper swiper-wrapper">
+                                <div class="article__slide swiper-slide">
+                                    <img src="dist/images/articles/1.jpg" alt="" class="article__img">
+                                </div>
+                                <div class="article__slide swiper-slide">
+                                    <img src="dist/images/articles/1.jpg" alt="" class="article__img">
+                                </div>
+                                <div class="article__slide swiper-slide">
+                                    <img src="dist/images/articles/1.jpg" alt="" class="article__img">
+                                </div>
+                            </div>
+                            <div class="article__navigation">
+                                <button class="move-link move-link_prev article__slider-prev"></button>
+                                <button class="move-link article__slider-next"></button>
+                            </div>
                         </div>
                     </div>
                     <div class="article__box article__box_inf">
@@ -381,7 +371,16 @@
                                 моментально все возникшие вопросы! Я настоятельно рекомендую как минимум посетить, а
                                 окунувшись в мир высококачественного сервиса всегда отдавать предпочтение исключительно
                                 этому отелю и дружному коллективу!</p>
-                            <button href="#" class="move-link move-link_down review__more"></button>
+                            <p class="review__text">Отель соответствует всем параметрам современного человека, но самое
+                                важное это сервис! Тут могу сказать, что впервые приятно удивлена компетентностью,
+                                доброжелательностью и высочайшим уровнем культуры гостиничного бизнеса. Коллектив всегда
+                                готов помочь в любой ситуации, особенно хотелось бы отметить Алексея и Кристину, их
+                                терпение, выдержка, и компетентность заставляет навсегда влюбиться в этот отель и с
+                                первой минуты начиная от бронирования номера до выселения сопровождают и решают
+                                моментально все возникшие вопросы! Я настоятельно рекомендую как минимум посетить, а
+                                окунувшись в мир высококачественного сервиса всегда отдавать предпочтение исключительно
+                                этому отелю и дружному коллективу!</p>
+                            <button class="move-link move-link_down review__more"></button>
                         </div>
                         <div class="review reviews__item">
                             <div class="review__author">Анжелика, Кстельдефейс</div>
@@ -403,7 +402,7 @@
                                 моментально все возникшие вопросы! Я настоятельно рекомендую как минимум посетить, а
                                 окунувшись в мир высококачественного сервиса всегда отдавать предпочтение исключительно
                                 этому отелю и дружному коллективу!</p>
-                            <button href="#" class="move-link move-link_down review__more"></button>
+                            <button class="move-link move-link_down review__more"></button>
                         </div>
                     </div>
                 </div>
@@ -507,7 +506,7 @@
             </div>
         </div>
     </footer>
-    <script src="dist/js/common.js"></script>
+    <script src="dist/js/common.js?v=3"></script>
 </body>
 
 </html>
